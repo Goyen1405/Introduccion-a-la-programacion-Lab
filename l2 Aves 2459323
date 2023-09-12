@@ -1,0 +1,20 @@
+#Nombre del curso y sección : Introduccion a la programacion lab seccion 17 
+#Fecha de creación del programa: 12/09/2023 
+#Autor: Alejandro Echegoyen 2459323
+#Objetivo: Determinar por un programa si al momento de introducir valores de numeros enteros el valor sera positivo o negativo 
+print("Ejercicio 1")
+
+try:
+    numero_entero = int(input("Número ENTERO: "))
+    
+    if numero_entero > 0:
+        resultado = "POSITIVO"
+    elif numero_entero < 0:
+        resultado = "NEGATIVO"
+    else:
+        resultado = "CERO"
+    
+    print("RESULTADO:", resultado)
+
+except ValueError:
+    print("ERROR: Debe ingresar un número entero válido.")
